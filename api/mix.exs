@@ -44,7 +44,8 @@ defmodule Api.MixProject do
       {:gettext, "~> 0.18"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:open_api_spex, "~> 3.12"}
+      {:open_api_spex, "~> 3.12"},
+      {:joken, "~> 2.5"}
     ]
   end
 
