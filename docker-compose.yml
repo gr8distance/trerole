@@ -10,9 +10,9 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: app_database
       TZ: "Asia/Tokyo"
     ports:
       - 5432:5432
     volumes:
       - postgres:/var/lib/postgresql/data'
+      - ./postgres:/docker-entrypoint-initdb.d
