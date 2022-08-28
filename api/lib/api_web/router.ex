@@ -9,6 +9,12 @@ defmodule ApiWeb.Router do
     pipe_through :api
   end
 
+  scope "/health", ApiWeb do
+    pipe_through :api
+
+    get "alive", HealthController, :alive
+  end
+
   # Enables LiveDashboard only for development
   #
   # If you want to use the LiveDashboard in production, you should put
