@@ -2,10 +2,10 @@ import Config
 
 # Configure your database
 config :api, Api.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "user",
+  password: "password",
   hostname: "localhost",
-  database: "api_dev",
+  database: "app_database",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
